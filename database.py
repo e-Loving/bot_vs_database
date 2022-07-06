@@ -21,4 +21,3 @@ def delete(who="any"):
     cursor.execute("DELETE FROM sentences") if who == "any" else cursor.execute(
         f"DELETE FROM sentences WHERE user_id = '{who}'")
     connection.commit()
-
